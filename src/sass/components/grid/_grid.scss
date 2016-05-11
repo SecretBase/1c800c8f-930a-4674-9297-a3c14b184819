@@ -1,7 +1,9 @@
 @import 'config';
 
-@import 'foundation-sites/scss/util/util';
-@import 'foundation-sites/scss/global';
 @import 'foundation-sites/scss/grid/grid';
 
 @include foundation-grid;
+
+.columns {
+  box-sizing: border-box;
+}

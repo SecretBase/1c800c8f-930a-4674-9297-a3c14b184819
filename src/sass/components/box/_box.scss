@@ -1,0 +1,60 @@
+@import 'config';
+
+.box {
+
+  border-radius: 8px;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  &-body {
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  &-border {
+    border: 2px solid $color-grey-200;
+  }
+
+  &-image {
+    line-height: 0;
+  }
+
+  &-padding {
+
+    padding: 20px;
+
+    &-left,
+    &-left-right {
+      padding-left: 20px;
+    }
+
+    &-right,
+    &-left-right {
+      padding-right: 20px;
+    }
+
+    &-top {
+      padding-top: 20px;
+    }
+
+    &-bottom {
+      padding-bottom: 20px;
+    }
+
+  }
+
+  &-bg {
+
+    &-bon-jour {
+      background-color: $color-bon-jour;
+    }
+
+    &-swiss-coffee {
+      background-color: $color-swiss-coffee;
+    }
+
+  }
+
+
+
+}

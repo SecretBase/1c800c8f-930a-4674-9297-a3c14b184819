@@ -1,3 +1,25 @@
 @import 'bourbon';
+@import 'normalize.css/normalize';
+
+@import 'config/color-palette';
+@import 'foundation-sites/scss/util/util';
+@import 'foundation-sites/scss/global';
+
+@import 'components/typography/typography';
+@import 'components/image/image';
 
 @import 'components/grid/grid';
+@import 'components/button/button';
+@import 'components/forms/forms';
+@import 'components/visibility/visibility';
+@import 'components/float/float';
+
+@import 'components/header/header';
+@import 'components/main-menu/main-menu';
+@import 'components/sub-menu/sub-menu';
+@import 'components/company-logo/company-logo';
+@import 'components/section/section';
+@import 'components/wrapper/wrapper';
+@import 'components/hero-slogan/hero-slogan';
+@import 'components/box/box';
+@import 'components/quote/quote';

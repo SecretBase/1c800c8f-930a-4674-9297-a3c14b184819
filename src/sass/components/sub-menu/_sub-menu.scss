@@ -1,0 +1,23 @@
+@import 'config';
+
+.sub-menu {
+
+  &-link {
+    color: $color-java;
+    text-decoration: none;
+    font-size: rem(16);
+    @include heading-font-family;
+  }
+
+  &-item {
+
+    &-active {
+
+    }
+
+  }
+
+  .menu {
+    padding: 0;
+  }
+}

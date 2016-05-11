@@ -1,0 +1,32 @@
+@import 'config';
+
+.quote {
+
+  display: inline-block;
+  width: 50%;
+  float: left;
+  margin: 50px;
+  margin-left: 0;
+  margin-bottom: 30px;
+
+
+  &-right {
+    float: right;
+    margin: 50px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+}
+
+q.quote {
+  &:before,
+  &:after {
+    content: none;
+  }
+}
+
+.cite {
+  display: block;
+  margin: 20px 0;
+}

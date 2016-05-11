@@ -1,0 +1,57 @@
+@import 'config';
+
+@import url($web-font-url);
+
+:root {
+  font-family: $root-font-family;
+  font-size: $em-base;
+  line-height: 1.4;
+}
+
+@mixin heading-font-family {
+  font-family: $heading-font-family;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include heading-font-family;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: rem(42);
+}
+
+h2 {
+  font-size: rem(30);
+}
+
+address {
+  font-style: normal;
+  font-size: rem(16);
+}
+
+.lead {
+  font-size: em(28);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-trim-spacing {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text-highlight-nevada {
+  color: $color-nevada;
+}

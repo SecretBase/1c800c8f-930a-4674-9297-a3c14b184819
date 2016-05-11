@@ -1,0 +1,32 @@
+@import 'config';
+
+@import 'foundation-sites/scss/components/menu';
+
+@include foundation-menu;
+
+.main-menu {
+
+  float: right;
+  padding: 0;
+
+  &-item {
+
+  }
+
+  &-link {
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include heading-font-family;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .menu > li > a {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+}

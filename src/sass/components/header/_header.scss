@@ -1,0 +1,6 @@
+@import 'config';
+
+.header {
+  @include clearfix;
+  background-color: $color-outer-space;
+}

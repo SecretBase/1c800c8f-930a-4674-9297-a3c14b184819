@@ -1,0 +1,17 @@
+@import 'config';
+
+.section {
+
+  background-color: $color-white;
+  padding: 48px 0;
+
+  &-bg-regent-grey {
+    background-color: $color-regent-grey;
+  }
+
+  &-hero {
+    padding: 78px 0;
+    padding-left: 20px;
+  }
+
+}

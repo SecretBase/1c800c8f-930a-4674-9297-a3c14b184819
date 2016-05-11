@@ -12,7 +12,7 @@ gulp.task('default', ['BuildJade', 'BuildJavascript', 'BuildSass'], function () 
 
   livereload.listen();
 
-  gulp.watch('src/views/**/*.jade', ['BuildJade']);
+  gulp.watch('src/views/**/*.pug', ['BuildJade']);
   gulp.watch('src/javascripts/**/*.js', ['BuildJavascript']);
   gulp.watch('src/sass/**/*.scss', ['BuildSass']);
 
@@ -20,7 +20,7 @@ gulp.task('default', ['BuildJade', 'BuildJavascript', 'BuildSass'], function () 
 
 gulp.task('BuildJade', function () {
 
-  return gulp.src('src/views/index.jade')
+  return gulp.src('src/views/index.pug')
     .pipe(pug({
       pretty: true
     }))

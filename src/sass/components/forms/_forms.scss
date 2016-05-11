@@ -1,0 +1,20 @@
+@import 'config';
+
+@import 'foundation-sites/scss/forms/forms';
+
+@include foundation-forms;
+
+label {
+  @include heading-font-family;
+  font-size: rem(16px);
+  color: $color-grey-500;
+}
+
+textarea {
+  height: auto;
+  resize: none;
+}
+
+#{text-inputs()}, textarea {
+  border-radius: 5px;
+}

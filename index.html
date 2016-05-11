@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <title>Challenge Accepted</title>
+    <link rel="stylesheet" href="./dist/css/app.css">
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="header">
+      <div class="wrapper">
+        <div class="row">
+          <div class="columns large-12"><a class="company-logo" href="#"><img class="company-logo-img" src="./src/img/logo.svg" alt="Company Logo"></a>
+            <nav class="main-menu">
+              <ul class="menu align-left">
+                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem1</a></li>
+                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem2</a></li>
+                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem3</a></li>
+                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem4</a></li>
+                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem5</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section section-hero section-bg-regent-grey">
+        <div class="wrapper">
+          <div class="row">
+            <div class="columns large-8">
+              <h1 class="hero-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="wrapper">
+          <div class="row">
+            <section class="columns large-9 medium-8">
+              <article>
+                <h1>Lorem ipsum dolor sit</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <q class="quote"><em class="text-highlight-nevada lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+                    <cite class="cite text-right">- I don't see the point of this</cite>
+                  </q>
+                  asdasds ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <q class="quote quote-right"><em class="text-highlight-nevada lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+                    <cite class="cite text-right">- I don't see the point of this</cite>
+                  </q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </article>
+            </section>
+            <div class="columns large-3 medium-4">
+              <div class="box box-body box-padding-bottom box-border box-padding-top">
+                <h3 class="text-center text-trim-spacing">Submenu</h3>
+                <nav class="sub-menu">
+                  <ul class="menu vertical">
+                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem1</a></li>
+                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem2</a></li>
+                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem3</a></li>
+                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem4</a></li>
+                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem5</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="box">
+                <div class="box-image"><img src="src/img/hk-skyline.jpg" alt="Contact Us Background"></div>
+                <div class="box-body box-padding box-bg-bon-jour">
+                  <div class="personal-info"></div>
+                </div>
+                <div class="box-body box-padding box-bg-swiss-coffee">
+                  <h3 class="text-trim-spacing text-center"> Send me a message</h3>
+                  <div class="contact-us box-padding-top">
+                    <form id="contact-us" method="post" action="#">
+                      <label for="subject">Subject
+                        <input type="text" id="subject" name="subject">
+                      </label>
+                      <label for="message">Message
+                        <textarea id="message" name="message" row="3"></textarea>
+                      </label>
+                      <button class="button expanded" type="submit">Send</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="box-body box-bg-bon-jour box-padding">
+                  <h3 class="text-center text-trim-spacing">or meet me at the office</h3>
+                </div>
+                <div class="box-body box-image"><a href="#" target="_blank"><img src="src/img/map.gif" alt="Map"></a></div>
+                <div class="box-body box-padding box-bg-bon-jour">
+                  <address>One Midtown<br>11 Hoi Shing Rd<br>Tsuen Wan</address>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

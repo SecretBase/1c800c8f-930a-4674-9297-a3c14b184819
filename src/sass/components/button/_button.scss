@@ -1,0 +1,9 @@
+@import 'config';
+
+@import 'foundation-sites/scss/components/button';
+
+@include foundation-button;
+
+.button {
+  border-radius: 5px !important; // HACK: For Foundation Form border radius
+}
