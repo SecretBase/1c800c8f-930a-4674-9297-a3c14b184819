@@ -1,0 +1,34 @@
+.box.contact-us
+  .box-image.hide-for-small-only
+    img(src="src/img/hk-skyline.jpg", alt="Contact Us Background")
+
+  .box-body.box-padding.box-bg-bon-jour
+    .personal-info
+
+  .box-body.box-padding.box-bg-swiss-coffee
+    h3.text-trim-spacing.text-center  Send me a message
+    .contact-us-form.box-padding-top
+      form(id="contact-us", method="post", action="#")
+        label(for="subject") Subject
+          input(type="text" id="subject" name="subject")
+        label(for="message") Message
+          textarea(id="message" name="message" row="3")
+        button.button.expanded(type="submit") Send
+
+
+  .box-body.box-bg-bon-jour.box-padding
+    h3.text-center.text-trim-spacing or meet me at the office
+
+
+  .box-body.box-image.text-center.box-bg-swiss-coffee
+    a(href="#", target="_blank")
+      img(src="src/img/map.gif", alt="Map")
+
+
+  .box-body.box-padding.box-bg-bon-jour
+    address
+      | One Midtown
+      br
+      | 11 Hoi Shing Rd
+      br
+      | Tsuen Wan

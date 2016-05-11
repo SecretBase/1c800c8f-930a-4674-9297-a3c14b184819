@@ -36,39 +36,6 @@ block main
 
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-        .columns.large-3.medium-4
-
-          .box.box-body.box-padding-bottom.box-border.box-padding-top
-            h3.text-center.text-trim-spacing Submenu
-            include ./components/sub-menu/sub-menu.pug
-
-          .box
-            .box-image
-              img(src="src/img/hk-skyline.jpg", alt="Contact Us Background")
-            .box-body.box-padding.box-bg-bon-jour
-              .personal-info
-            .box-body.box-padding.box-bg-swiss-coffee
-              h3.text-trim-spacing.text-center  Send me a message
-              .contact-us.box-padding-top
-                form(id="contact-us", method="post", action="#")
-
-                  label(for="subject") Subject
-                    input(type="text" id="subject" name="subject")
-
-                  label(for="message") Message
-                    textarea(id="message" name="message" row="3")
-
-                  button.button.expanded(type="submit") Send
-
-            .box-body.box-bg-bon-jour.box-padding
-              h3.text-center.text-trim-spacing or meet me at the office
-            .box-body.box-image
-              a(href="#", target="_blank")
-                img(src="src/img/map.gif", alt="Map")
-            .box-body.box-padding.box-bg-bon-jour
-              address
-                | One Midtown
-                br
-                | 11 Hoi Shing Rd
-                br
-                | Tsuen Wan
+        aside.columns.large-3.medium-4
+          include ./components/sub-menu/sub-menu.pug
+          include ./components/contact-us/contact-us
