@@ -1,0 +1,29 @@
+{
+  "name": "1c800c8f-930a-4674-9297-a3c14b184819",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chan Ki Hong",
+  "license": "MIT",
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "bourbon": "^4.2.7",
+    "browserify": "^13.0.1",
+    "cross-env": "^1.0.7",
+    "foundation-sites": "^6.2.1",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.0.2",
+    "gulp-sass": "^2.3.1",
+    "pug": "^2.0.0-alpha7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "gulp-livereload": "^3.8.1"
+  }
+}
