@@ -6,6 +6,10 @@
   font-family: $root-font-family;
   font-size: $em-base;
   line-height: 1.4;
+
+  @include breakpoint(small down) {
+    font-size: 18px;
+  }
 }
 
 @mixin heading-font-family {
@@ -29,6 +33,15 @@ h2 {
 address {
   font-style: normal;
   font-size: rem(16);
+}
+
+a {
+  text-decoration: none;
+  color: $color-java;
+
+  &:hover {
+    color: scale-color($color-java, $lightness: -15%);
+  }
 }
 
 .lead {

@@ -1,18 +1,32 @@
 @import 'config';
 
+// TODO:
+
 .sub-menu {
 
   &-link {
-    color: $color-java;
+    color: $sub-menu-link-color;
     text-decoration: none;
     font-size: rem(16);
     @include heading-font-family;
+
+    &:hover {
+      color: $sub-menu-link-color-hover;
+    }
   }
 
   &-item {
 
-    &-active {
+    &-current {
 
+      .sub-menu-link {
+        color: $color-white;
+        background-color: $sub-menu-link-bg-color;
+
+        &:hover {
+          background-color: $sub-menu-link-bg-color-hover;
+        }
+      }
     }
 
   }

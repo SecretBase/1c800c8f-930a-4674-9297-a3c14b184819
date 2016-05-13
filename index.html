@@ -4,100 +4,220 @@
     <meta charset="UTF-8">
     <title>Challenge Accepted</title>
     <link rel="stylesheet" href="./dist/css/app.css">
+    <script src="https://use.fontawesome.com/5ecb4b3783.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="wrapper">
-        <div class="row">
-          <div class="columns large-12"><a class="company-logo" href="#"><img class="company-logo-img" src="./src/img/logo.svg" alt="Company Logo"></a>
-            <nav class="main-menu">
-              <ul class="menu align-left">
-                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem1</a></li>
-                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem2</a></li>
-                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem3</a></li>
-                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem4</a></li>
-                <li class="main-menu-item"><a class="main-menu-link" href="#">lorem5</a></li>
-              </ul>
-            </nav>
-          </div>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+          <nav class="mobile-menu"></nav>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="section section-hero section-bg-regent-grey">
-        <div class="wrapper">
-          <div class="row">
-            <div class="columns large-8">
-              <h1 class="hero-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="wrapper">
-          <div class="row">
-            <section class="columns large-9 medium-8">
-              <article>
-                <h1>Lorem ipsum dolor sit</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  <q class="quote"><em class="text-highlight-nevada lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
-                    <cite class="cite text-right">- I don't see the point of this</cite>
-                  </q>
-                  asdasds ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  <q class="quote quote-right"><em class="text-highlight-nevada lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
-                    <cite class="cite text-right">- I don't see the point of this</cite>
-                  </q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </article>
-            </section>
-            <aside class="columns large-3 medium-4">
-              <div class="box box-body box-padding-bottom box-border box-padding-top hide-for-small-only">
-                <h3 class="text-center text-trim-spacing">Submenu</h3>
-                <nav class="sub-menu">
-                  <ul class="menu vertical">
-                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem1</a></li>
-                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem2</a></li>
-                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem3</a></li>
-                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem4</a></li>
-                    <li class="sub-menu-item"><a class="sub-menu-link" href="#">lorem5</a></li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="box contact-us">
-                <div class="box-image hide-for-small-only"><img src="src/img/hk-skyline.jpg" alt="Contact Us Background"></div>
-                <div class="box-body box-padding box-bg-bon-jour">
-                  <div class="personal-info"></div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <header class="header">
+            <div class="wrapper">
+              <div class="row">
+                <div class="columns large-12"><a class="company-logo" href="#"><img class="company-logo-img" src="./src/img/logo.svg" alt="Company Logo"></a>
+                  <div class="menu-toogle float-right hide-for-large">
+                    <button class="button toggle-button" type="button" data-toggle="offCanvas"></button>
+                  </div>
+                  <nav class="main-menu show-for-large" id="main-menu">
+                    <ul class="menu align-left">
+                      <li class="main-menu-item main-menu-item-current"><a class="main-menu-link" href="#">Home</a></li>
+                      <li class="main-menu-item"><a class="main-menu-link" href="#">Developer</a></li>
+                      <li class="main-menu-item"><a class="main-menu-link" href="#">About us</a></li>
+                      <li class="main-menu-item"><a class="main-menu-link" href="#">Hello World</a></li>
+                      <li class="main-menu-item"><a class="main-menu-link" href="#">lorem5</a></li>
+                    </ul>
+                  </nav>
                 </div>
-                <div class="box-body box-padding box-bg-swiss-coffee">
-                  <h3 class="text-trim-spacing text-center"> Send me a message</h3>
-                  <div class="contact-us-form box-padding-top">
-                    <form id="contact-us" method="post" action="#">
-                      <label for="subject">Subject
-                        <input type="text" id="subject" name="subject">
-                      </label>
-                      <label for="message">Message
-                        <textarea id="message" name="message" row="3"></textarea>
-                      </label>
-                      <button class="button expanded" type="submit">Send</button>
-                    </form>
+              </div>
+            </div>
+          </header>
+          <main>
+            <div class="section section-hero section-bg-regent-grey">
+              <div class="wrapper">
+                <div class="row">
+                  <div class="columns large-8">
+                    <h1 class="hero-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h1>
                   </div>
                 </div>
-                <div class="box-body box-bg-bon-jour box-padding">
-                  <h3 class="text-center text-trim-spacing">or meet me at the office</h3>
+              </div>
+            </div>
+            <div class="section">
+              <div class="wrapper">
+                <div class="row">
+                  <section class="columns large-9">
+                    <article>
+                      <h1>Lorem ipsum dolor sit</h1>
+                      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <q class="quote quote-right"><em class="text-highlight-nevada lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+                          <cite class="cite text-right">- I don't see the point of this</cite>
+                        </q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                      <h2 class="divider-title"><span>More in this series</span></h2>
+                      <ul class="image-article-list">
+                        <li class="image-article-list-item">
+                          <article class="image-article-list-article">
+                            <div class="image-article-list-image"><a href="#"><img src="./src/img/teaser-01.jpg"/></a></div>
+                            <div class="image-article-list-content">
+                              <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                          </article>
+                        </li>
+                        <li class="image-article-list-item">
+                          <article class="image-article-list-article">
+                            <div class="image-article-list-image"><a href="#"><img src="./src/img/teaser-02.jpg"/></a></div>
+                            <div class="image-article-list-content">
+                              <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                          </article>
+                        </li>
+                      </ul>
+                    </article>
+                  </section>
+                  <aside class="columns large-3">
+                    <div class="box box-body box-padding-bottom box-border box-padding-top hide-for-small-only">
+                      <h3 class="text-center text-trim-spacing">Submenu</h3>
+                      <nav class="sub-menu">
+                        <ul class="menu vertical">
+                          <li class="sub-menu-item"><a class="sub-menu-link" href="#">Home</a></li>
+                          <li class="sub-menu-item sub-menu-item-current"><a class="sub-menu-link" href="#">About</a></li>
+                          <li class="sub-menu-item"><a class="sub-menu-link" href="#">Example</a></li>
+                          <li class="sub-menu-item"><a class="sub-menu-link" href="#">Developer</a></li>
+                          <li class="sub-menu-item"><a class="sub-menu-link" href="#">Hello World</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="box contact-us">
+                      <div class="box-image hide-for-medium-only hide-for-small-only"><img src="src/img/hk-skyline.jpg" alt="Contact Us Background"></div>
+                      <div class="box-body box-padding box-bg-bon-jour contact-info">
+                        <div class="contact-info-avatar"><img src="https://avatars1.githubusercontent.com/u/5130999?v=3&amp;s=460" alt="Chan Ki Hong"></div>
+                        <dl class="contact-info-list">
+                          <dt class="contact-info-tag">Name</dt>
+                          <dd class="contact-info-description">Chan Ki Hong</dd>
+                          <dt class="contact-info-tag">Email</dt>
+                          <dd class="contact-info-description"><a href="mail:tochan.ki.hong@gmail.com">chan.ki.hong@gmail.com</a></dd>
+                          <dt class="contact-info-tag">Phone</dt>
+                          <dd class="contact-info-description"><a href="tel:+852 12345678">+852 123456789</a></dd>
+                        </dl>
+                      </div>
+                      <div class="box-body box-padding box-bg-swiss-coffee">
+                        <h3 class="text-trim-spacing text-center"> Send me a message</h3>
+                        <div class="contact-us-form box-padding-top">
+                          <form id="contact-us" method="post" action="#">
+                            <label for="subject">Subject
+                              <input type="text" id="subject" name="subject">
+                            </label>
+                            <div class="word-count">
+                              <label for="message">Message
+                                <textarea class="word-count-input" id="message" name="message" row="3" maxlength="140"></textarea>
+                              </label>
+                              <div class="word-count-wrapper text-right"><span class="word-count-counter"></span><span class="word-count-max">/ 140</span></div>
+                            </div>
+                            <button class="button expanded" type="submit">Send</button>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="box-body box-bg-bon-jour box-padding">
+                        <h3 class="text-center text-trim-spacing">or meet me at the office</h3>
+                      </div>
+                      <div class="box-body box-image text-center box-bg-swiss-coffee"><a href="#" target="_blank"><img src="src/img/map.gif" alt="Map"></a></div>
+                      <div class="box-body box-padding box-bg-bon-jour">
+                        <address>One Midtown<br>11 Hoi Shing Rd<br>Tsuen Wan</address>
+                      </div>
+                    </div>
+                  </aside>
                 </div>
-                <div class="box-body box-image text-center box-bg-swiss-coffee"><a href="#" target="_blank"><img src="src/img/map.gif" alt="Map"></a></div>
-                <div class="box-body box-padding box-bg-bon-jour">
-                  <address>One Midtown<br>11 Hoi Shing Rd<br>Tsuen Wan</address>
+                <div class="row">
+                  <div class="columns large-12">
+                    <h2 class="divider-title"><span>Related Artices</span></h2>
+                    <ul class="image-article-list grid-layout">
+                      <li class="image-article-list-item">
+                        <article class="image-article-list-article">
+                          <div class="image-article-list-image"><a href="#"><img src="./src/img/teaser-rect-01.jpg"/></a></div>
+                          <div class="image-article-list-content">
+                            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="image-article-list-item">
+                        <article class="image-article-list-article">
+                          <div class="image-article-list-image"><a href="#"><img src="./src/img/teaser-rect-02.jpg"/></a></div>
+                          <div class="image-article-list-content">
+                            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolor anim id est laborum.</p>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="image-article-list-item">
+                        <article class="image-article-list-article">
+                          <div class="image-article-list-image"><a href="#"><img src="./src/img/teaser-rect-03.jpg"/></a></div>
+                          <div class="image-article-list-content">
+                            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="image-article-list-item">
+                        <article class="image-article-list-article">
+                          <div class="image-article-list-image"><a href="#"><img src="./src/img/teaser-rect-04.jpg"/></a></div>
+                          <div class="image-article-list-content">
+                            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </article>
+                      </li>
+                      <li class="image-article-list-item">
+                        <article class="image-article-list-article">
+                          <div class="image-article-list-image"><a href="#"><img src="./src/img/teaser-rect-05.jpg"/></a></div>
+                          <div class="image-article-list-content">
+                            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                        </article>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </aside>
-          </div>
+            </div>
+          </main>
+          <footer class="footer">
+            <div class="wrapper">
+              <nav class="footer-menu menu-centered">
+                <ul class="menu">
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">About us
+                      <ul class="footer-menu-sub-menu">
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsum dolor</a></li>
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsud</a></li>
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsud</a></li>
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsud</a></li>
+                      </ul></a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Legal
+                      <ul class="footer-menu-sub-menu">
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsum dolor sit</a></li>
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsum dolor sit</a></li>
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsum dolor sit</a></li>
+                      </ul></a></li>
+                  <li class="footer-menu-item"><a class="footer-menu-link" href="#">Developers
+                      <ul class="footer-menu-sub-menu">
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem</a></li>
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsum dolor sit</a></li>
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsum dolor sit</a></li>
+                        <li class="footer-menu-sub-menu-item"><a class="footer-menu-sub-menu-link" href="#">Lorem ipsum d sit</a></li>
+                      </ul></a></li>
+                </ul>
+              </nav>
+            </div>
+          </footer>
+          <div class="js-off-canvas-exit"></div>
         </div>
       </div>
-    </main>
-    <footer></footer>
+    </div>
   </body>
+  <script type="text/javascript" src="./dist/javascripts/app.js"></script>
 </html>

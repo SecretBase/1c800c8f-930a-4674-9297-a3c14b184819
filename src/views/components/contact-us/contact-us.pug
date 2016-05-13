@@ -1,9 +1,18 @@
 .box.contact-us
-  .box-image.hide-for-small-only
+  .box-image.hide-for-medium-only.hide-for-small-only
     img(src="src/img/hk-skyline.jpg", alt="Contact Us Background")
 
-  .box-body.box-padding.box-bg-bon-jour
-    .personal-info
+  .box-body.box-padding.box-bg-bon-jour.contact-info
+    .contact-info-avatar
+      img(src="https://avatars1.githubusercontent.com/u/5130999?v=3&s=460" alt="Chan Ki Hong")
+
+    dl.contact-info-list
+      dt.contact-info-tag Name
+      dd.contact-info-description Chan Ki Hong
+      dt.contact-info-tag Email
+      dd.contact-info-description: a(href="mail:tochan.ki.hong@gmail.com") chan.ki.hong@gmail.com
+      dt.contact-info-tag Phone
+      dd.contact-info-description: a(href="tel:+852 12345678") +852 123456789
 
   .box-body.box-padding.box-bg-swiss-coffee
     h3.text-trim-spacing.text-center  Send me a message
@@ -11,8 +20,13 @@
       form(id="contact-us", method="post", action="#")
         label(for="subject") Subject
           input(type="text" id="subject" name="subject")
-        label(for="message") Message
-          textarea(id="message" name="message" row="3")
+        .word-count
+          label(for="message") Message
+            textarea.word-count-input(id="message" name="message" row="3" maxlength="140")
+          .word-count-wrapper.text-right
+            span.word-count-counter
+            span.word-count-max / 140
+
         button.button.expanded(type="submit") Send
 
 

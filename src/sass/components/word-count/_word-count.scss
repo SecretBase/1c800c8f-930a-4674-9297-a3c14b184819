@@ -1,0 +1,15 @@
+@import 'config';
+
+.word-count {
+
+  &-input {
+    margin-bottom: 0;
+  }
+
+  &-wrapper {
+    font-size: rem(16);
+    margin-bottom: 20px;
+    color: $color-grey-500;
+  }
+
+}

@@ -24,7 +24,8 @@ gulp.task('BuildJade', function () {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('.'));
+    .pipe(gulp.dest('.'))
+    .pipe(livereload());
 
 });
 

@@ -1,0 +1,64 @@
+@import 'config';
+
+@import 'foundation-sites/scss/components/off-canvas';
+
+@include foundation-off-canvas;
+
+.off-canvas-wrapper {
+  background-color: $color-outer-space;
+}
+
+.toggle-button {
+
+  margin: 0;
+  background-color: transparent;
+  font-family: FontAwesome;
+  padding-left: 0;
+  padding-right: 0;
+  outline: none;
+
+  &:before {
+    content: '\f0c9';
+    font-size: 28px;
+  }
+
+  &[aria-expanded="true"]:before {
+    content: '\f00d';
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-java;
+    background-color: transparent;
+  }
+}
+
+.js-off-canvas-exit.is-visible {
+  display: block;
+}
+
+.mobile-menu {
+
+  .menu {
+
+    > li {
+      display: block;
+
+      > a {
+        text-decoration: none;
+        color: $color-white;
+        @include heading-font-family;
+
+        &:hover {
+          background-color: $mobile-menu-link-bg-color-hover;
+          color: $color-java;
+        }
+      }
+    }
+
+
+
+  }
+
+}

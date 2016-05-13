@@ -1,0 +1,13 @@
+mixin image-article-list(list)
+
+  ul.image-article-list(class!=attributes.class)
+
+    each item in list.items
+
+      li.image-article-list-item
+        article.image-article-list-article
+          .image-article-list-image
+            a(href=item.targetUrl): img(src=item.thumbnailUrl)
+          .image-article-list-content
+            h2: a(href=href=item.targetUrl)= item.title
+            p= item.content

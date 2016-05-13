@@ -11,13 +11,40 @@
 
   &-item {
 
+    &-current {
+
+      .main-menu-link {
+
+        position: relative;
+        background-color: $main-menu-link-bg-color-hover;
+
+        &:after {
+          content: "";
+          left: 0;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background-color: $color-java;
+          height: 2px;
+        }
+      }
+
+    }
+
   }
 
   &-link {
+
     color: $color-white;
     text-decoration: none;
     text-transform: uppercase;
+    background-color: $color-outer-space;
     @include heading-font-family;
+
+    &:hover {
+      background-color: $main-menu-link-bg-color-hover;
+    }
+
   }
 
   .menu {

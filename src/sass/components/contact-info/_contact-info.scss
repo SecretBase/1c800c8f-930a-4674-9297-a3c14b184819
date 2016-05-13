@@ -1,0 +1,59 @@
+@import 'config';
+
+
+.contact-info {
+
+  padding-top: 50px;
+
+  @include breakpoint(medium down) {
+    padding-top: 20px;
+  }
+
+  &-avatar {
+    max-width: 100px;
+    top: -50px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $color-black;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid $color-white;
+    box-sizing: border-box;
+
+    @include breakpoint(medium down) {
+      position: static;
+      float: left;
+      margin-right: 20px;
+    }
+
+    @include breakpoint(small down) {
+      float: none;
+      margin: 0 auto;
+    }
+
+  }
+
+  &-list {
+    @include clearfix;
+    font-size: rem(16);
+    overflow: hidden;
+  }
+
+  &-tag {
+    @include heading-font-family;
+    font-size: rem(16);
+    float: left;
+    margin-right: 20px;
+  }
+
+  &-description {
+    font-size: rem(16);
+    margin: 0;
+    // white-space: nowrap;
+    margin-bottom: 10px;
+  }
+
+}

@@ -1,0 +1,55 @@
+@import 'config';
+
+
+.footer-menu {
+
+  text-align: center;
+  color: $color-white;
+
+  &-item {
+    padding: 0 60px;
+
+    @include breakpoint(medium down) {
+      padding: 0 30px;
+    }
+
+    @include breakpoint(small down) {
+      display: block !important;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+  }
+
+  &-link {
+    color: $color-white;
+    @include heading-font-family;
+    font-size: rem(26);
+  }
+
+  &-sub-menu {
+
+    list-style-type: none;
+
+    &-item {
+      color: $color-regent-grey;
+      margin: 15px 0;
+    }
+
+    &-link {
+
+      color: $color-regent-grey;
+      text-decoration: none;
+
+      &:hover {
+
+        color: $color-java;
+
+      }
+
+    }
+  }
+
+  .menu > li {
+    vertical-align: top;
+  }
+}

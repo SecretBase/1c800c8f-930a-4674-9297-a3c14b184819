@@ -1,0 +1,146 @@
+@import 'config';
+
+.image-article-list {
+
+  margin: 20px 0;
+  @include clearfix;
+
+  &-image {
+
+    float: left;
+    margin-right: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    line-height: 0;
+    max-width: 200px;
+
+    @include breakpoint(small down) {
+      float: none;
+      margin: 0 auto 15px auto;
+
+    }
+  }
+
+  &-content {
+    overflow: hidden;
+    font-size: rem(16);
+  }
+
+  &-item {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+
+    margin-top: 0;
+    color: $color-java;
+
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-java;
+
+      &:hover {
+        color: scale-color($color-java, $lightness: -15%);
+      }
+    }
+  }
+
+  &-article {
+    @include clearfix;
+  }
+
+  &.grid-layout {
+
+    .image-article-list-article {
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+    }
+
+    .image-article-list-image {
+      @extend .box-image;
+      float: none;
+      max-width: none;
+      margin: 0;
+      border-radius: 0;
+      img {
+        width: 100%;
+      }
+    }
+
+    .image-article-list-content {
+      @extend .box;
+      @extend .box-border;
+      @extend .box-body;
+      @extend .box-padding;
+      border-radius: 0 0 5px 5px;
+      border-top: 0;
+      margin-bottom: 0;
+
+      p {
+        color: $color-regent-grey;
+      }
+    }
+
+    .image-article-list-item {
+
+      max-width: 31%;
+      float: left;
+      margin-right: 3.5%;
+      margin-bottom: 3.5%;
+
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+
+      &:nth-child(3n+4) {
+        // margin-right: 0;
+        clear: left;
+      }
+
+      @include breakpoint(medium down) {
+        max-width: 48%;
+        margin-right: 2.5%;
+
+        &:nth-child(3n+3) {
+          margin-right: 2.5%;
+        }
+
+        &:nth-child(3n+4) {
+          clear: none;
+        }
+
+        &:nth-child(2n+2) {
+          margin-right: 0;
+        }
+
+        &:nth-child(2n+3) {
+          clear: left;
+        }
+      }
+
+      @include breakpoint(small down) {
+        max-width: 100%;
+        margin: 0;
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+
+}
+
+
+ul, ol {
+
+  padding: 0;
+
+  &.image-article-list {
+    list-style-type: none;
+  }
+
+}

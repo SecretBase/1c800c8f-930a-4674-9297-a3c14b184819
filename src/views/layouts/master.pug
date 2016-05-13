@@ -4,9 +4,23 @@ html
     meta(charset="UTF-8")
     title Challenge Accepted
     link(rel="stylesheet", href="./dist/css/app.css")
+    script(src="https://use.fontawesome.com/5ecb4b3783.js")
   body
-    header.header
-      include ../components/main-menu/main-menu.pug
-    main
-      block main
-    footer
+    .off-canvas-wrapper
+      .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+        .off-canvas.position-right#offCanvas(data-off-canvas data-position="right")
+
+          nav.mobile-menu
+
+
+        .off-canvas-content(data-off-canvas-content)
+          header.header
+            include ../components/main-menu/main-menu.pug
+          main
+            block main
+          footer.footer
+            .wrapper
+              include ../components/footer-menu/footer-menu.pug
+          .js-off-canvas-exit
+
+  script(type="text/javascript" src="./dist/javascripts/app.js")

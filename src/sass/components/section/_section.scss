@@ -3,7 +3,13 @@
 .section {
 
   background-color: $color-white;
+
   padding: 48px 0;
+
+  @include breakpoint(small down) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   &-bg-regent-grey {
     background-color: $color-regent-grey;
@@ -12,6 +18,11 @@
   &-hero {
     padding: 78px 0;
     padding-left: 20px;
+
+    @include breakpoint(small down) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
 }
