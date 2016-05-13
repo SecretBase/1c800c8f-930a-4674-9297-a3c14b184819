@@ -4,6 +4,7 @@
 .contact-info {
 
   padding-top: 50px;
+  position: relative;
 
   @include breakpoint(medium down) {
     padding-top: 20px;
