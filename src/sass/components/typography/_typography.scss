@@ -6,10 +6,6 @@
   font-family: $root-font-family;
   font-size: $em-base;
   line-height: 1.4;
-
-  @include breakpoint(small down) {
-    font-size: 18px;
-  }
 }
 
 @mixin heading-font-family {
