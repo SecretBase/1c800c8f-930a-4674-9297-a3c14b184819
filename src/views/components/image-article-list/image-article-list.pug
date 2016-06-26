@@ -9,5 +9,5 @@ mixin image-article-list(list)
           .image-article-list-image
             a(href=item.targetUrl): img(src=item.thumbnailUrl)
           .image-article-list-content
-            h2: a(href=href=item.targetUrl)= item.title
+            h3.image-article-list-item-title: a(href=href=item.targetUrl)= item.title
             p= item.content

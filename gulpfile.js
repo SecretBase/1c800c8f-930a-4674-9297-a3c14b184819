@@ -6,6 +6,7 @@ var browserify = require('browserify');
 var buffer = require('vinyl-buffer');
 var source = require('vinyl-source-stream');
 var pug = require('gulp-pug');
+var imagemin = require('gulp-imagemin');
 
 var isProduction = process.env.NODE_ENV === 'production';
 
@@ -80,4 +81,12 @@ gulp.task('BuildJavascript', function () {
     return stream;
 });
 
-gulp.task('build', ['BuildJade', 'BuildJavascript', 'BuildSass']);
+gulp.task('OptimizeImage', function () {
+
+  gulp.src('src/img/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('dist/img'));
+      
+});
+
+gulp.task('build', ['BuildJade', 'BuildJavascript', 'BuildSass', 'OptimizeImage']);

@@ -30,10 +30,11 @@
     margin-bottom: 20px;
   }
 
-  h2 {
+  .image-article-list-item-title {
 
     margin-top: 0;
     color: $color-java;
+    font-size: 32px;
 
     @include breakpoint(small down) {
       text-align: center;
