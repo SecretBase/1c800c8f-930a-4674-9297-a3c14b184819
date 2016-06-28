@@ -7,13 +7,13 @@ block main
     .wrapper
       .row
         .columns.large-8
-          h1.hero-slogan Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+          p.hero-slogan Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
 
 
   .section
     .wrapper
       .row
-        section.columns.large-9
+        div.columns.large-9
           article
             h1 Lorem ipsum dolor sit
 
@@ -26,7 +26,7 @@ block main
                 cite.cite.text-right - I don't see the point of this
 
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+          aside
             h2.divider-title: span More in this series
 
             +image-article-list({
@@ -53,7 +53,7 @@ block main
           include ./components/contact-us/contact-us
 
       .row
-        .columns.large-12
+        section.columns.large-12
           h2.divider-title: span Related Artices
 
           +image-article-list({
