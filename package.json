@@ -29,10 +29,13 @@
     "gulp-livereload": "^3.8.1",
     "gulp-pug": "^3.0.2",
     "gulp-sass": "^2.3.1",
+    "imagemin-mozjpeg": "^6.0.0",
     "normalize.css": "^4.1.1",
     "pug": "^2.0.0-alpha7",
     "uglifyjs": "^2.4.10",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
