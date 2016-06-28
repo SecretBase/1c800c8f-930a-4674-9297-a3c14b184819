@@ -7,6 +7,7 @@ var buffer = require('vinyl-buffer');
 var source = require('vinyl-source-stream');
 var pug = require('gulp-pug');
 var imagemin = require('gulp-imagemin');
+var imageminMozJpeg = require('imagemin-mozjpeg');
 
 var isProduction = process.env.NODE_ENV === 'production';
 
@@ -84,8 +85,18 @@ gulp.task('BuildJavascript', function () {
 
 gulp.task('OptimizeImage', function () {
 
-  gulp.src('src/img/*')
-      .pipe(imagemin())
+  return gulp.src('src/img/*')
+      .pipe(imagemin(
+        [
+          imagemin.gifsicle({
+            optimizationLevel: 3
+          }),
+          imageminMozJpeg({
+            quality: 80
+          }),
+          imagemin.optipng(),
+          imagemin.svgo()]
+      ))
       .pipe(gulp.dest('dist/img'));
 
 });
